@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.main-term {
+  background-image: url("../Images/6209665.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  color: #000000;
+}
+
+#alignCenter {
+  background-color: #ffff;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+#alignCenter > h2 {
+  text-align: center;
+  margin-bottom: 4%;
+  color: #ffd532;
+  font-weight: 700;
+  border-bottom: 3px solid #000000;
+}
+
+.declaration {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+ul li {
+  list-style: none;
+}
