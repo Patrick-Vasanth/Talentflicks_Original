@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -376,7 +376,7 @@
               <div class="sub-btn">
                 <button
                   class="btn btn-outline-warning"
-                  onclick="validateForm() "
+                  onclick="validateForm()"
                   type="button"
                   disabled
                   id="submitForm"
@@ -458,11 +458,17 @@
             />
             <div class="address">
               <h2>Talentflicks</h2>
-              <p>
-                No.24 A, 3rd Main Road,<br />
-                KK Nagar, Sreenivasapuram,<br />
-                Guduvancherry 603 202.
-              </p>
+              <a
+                href="https://maps.app.goo.gl/veyoSeQYiQhLAHXL6"
+                target="_blank"
+                style="color: #fff; text-decoration: none"
+              >
+                <p>
+                  No.24 A, 3rd Main Road,<br />
+                  KK Nagar, Sreenivasapuram,<br />
+                  Guduvancherry 603 202.
+                </p>
+              </a>
               <div class="emailUs">
                 <i class="fa-regular fa-envelope mailUs"></i>
                 <span
@@ -507,8 +513,15 @@
           </span>
         </div>
       </div>
-      <div class="whatsapp" data-toggle="tooltip" data-placement="top" title="Chat With Us">
-        <a href="https://wa.me/6382815355?" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <div
+        class="whatsapp"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="Chat With Us"
+      >
+        <a href="https://wa.me/6382815355?" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
       </div>
     </div>
     <script src="./Script.js"></script>
