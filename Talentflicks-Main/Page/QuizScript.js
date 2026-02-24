@@ -102,14 +102,14 @@ async function displayQuestionOrAd() {
         (option, index) => `
       <input type="radio" class="radioBtn" name="question" value="${option.qo_id}" id="option${index}">
       <label class="option" for="option${index}">${option.qo_option_value}</label><br>
-    `
+    `,
       )
       .join("");
 
     questionContainer.innerHTML = `
       <div class="question">${questions.indexOf(currentQuestion) + 1}) ${
-      currentQuestion.qt_text
-    }</div>
+        currentQuestion.qt_text
+      }</div>
       <div class="options">${optionsHTML}</div>
     `;
 
@@ -205,7 +205,7 @@ async function displayAd() {
 // Function to handle when the time for a question runs out
 async function handleTimeOut() {
   const selectedOption = document.querySelector(
-    'input[name="question"]:checked'
+    'input[name="question"]:checked',
   );
   // Default userAnswerId to 0 if the user didn't select an option within the time
   if (!selectedOption) {
@@ -226,7 +226,7 @@ async function handleTimeOut() {
 // Event listener for the next button
 nextButton.addEventListener("click", async () => {
   const selectedOption = document.querySelector(
-    'input[name="question"]:checked'
+    'input[name="question"]:checked',
   );
   if (!selectedOption) {
     // Default userAnswerId to 0 if the user didn't select an option
@@ -250,7 +250,7 @@ finishButton.addEventListener("click", async () => {
   clearInterval(timerInterval); // Stop the timer
 
   const selectedOption = document.querySelector(
-    'input[name="question"]:checked'
+    'input[name="question"]:checked',
   );
 
   if (!selectedOption) {
@@ -376,19 +376,19 @@ let goHome = async (event) => {
     .then((response) => response.json())
     .then((data) => {
       if (data.success) {
-        window.location.href = "Homepage.html";
+        window.location.href = "index.html";
         sessionStorage.clear();
       } else {
-        window.location.href = "Homepage.html";
+        window.location.href = "index.html";
         sessionStorage.clear();
       }
     })
     .catch((error) => {
-      window.location.href = "Homepage.html";
+      window.location.href = "index.html";
       sessionStorage.clear();
     });
 
-  window.location.href = "Homepage.html";
+  window.location.href = "index.html";
   sessionStorage.clear();
   console.log("logout");
 };

@@ -238,7 +238,7 @@ function isValidURL(movieLink) {
       "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" + // port and path
       "(\\?[;&a-z\\d%_.~+=-]*)?" + // query string
       "(\\#[-a-z\\d_]*)?$",
-    "i"
+    "i",
   ); // fragment locator
 
   return !!pattern.test(movieLink);
@@ -324,7 +324,7 @@ async function contactForm() {
         setTimeout(function () {
           // Show the modal
           var myModal = new bootstrap.Modal(
-            document.getElementById("exampleModal")
+            document.getElementById("exampleModal"),
           );
           myModal.show();
         }, 1000);
@@ -501,14 +501,14 @@ function validatePhoneNumber2(phoneNumber) {
 //Navigation to Interested  page
 
 function submitPage2() {
-  var newURL = "Interest.html";
+  var newURL = "/Talentflicks-Main/Page/Interest.html";
   window.location.href = newURL;
 }
 
 // side bar navigation to Interested page
 
 function submitPage3() {
-  var newURL = "Interest.html";
+  var newURL = "/Talentflicks-Main/Page/Interest.html";
   window.location.href = newURL;
 }
 

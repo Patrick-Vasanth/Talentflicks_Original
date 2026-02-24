@@ -19,7 +19,6 @@
 //   setActiveMenuItem();
 // });
 
-
 // document.addEventListener("DOMContentLoaded", () => {
 //   const menuItems = document.querySelectorAll(".nav-list li");
 //   function setActiveMenuItem() {
@@ -34,7 +33,7 @@
 //       // Check if the current URL is the base URL and the menu item URL corresponds to the homepage
 //       if (currentURL === baseURL && menuItemPath === "/Homepage.html") {
 //         item.classList.add("active");
-//       } 
+//       }
 //       // Otherwise, check if the current URL matches the menu item URL
 //       else if (currentURL === menuItemURL) {
 //         item.classList.add("active");
@@ -49,7 +48,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const menuItems = document.querySelectorAll(".nav-list li > a"); // Select only <li> elements with direct child <a> tags
-  
+
   function setActiveMenuItem() {
     const currentURL = window.location.href;
     const baseURL = window.location.origin + "/"; // Get the base URL including the protocol and hostname
@@ -59,9 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const menuItemPath = new URL(menuItemURL).pathname;
 
       // Check if the current URL is the base URL and the menu item URL corresponds to the homepage
-      if (currentURL === baseURL && menuItemPath === "/Homepage.html") {
+      if (currentURL === baseURL && menuItemPath === "index.html") {
         menuItemLink.parentElement.classList.add("active");
-      } 
+      }
       // Otherwise, check if the current URL matches the menu item URL
       else if (currentURL === menuItemURL) {
         menuItemLink.parentElement.classList.add("active");
@@ -73,9 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initially set the active menu item
   setActiveMenuItem();
 });
-
-
-
 
 // burger menu
 let showSidebar = () => {
@@ -208,7 +204,7 @@ function submitPage5() {
 //     prevButton.style.display = "block";
 //   }
 
-  // Check if we are on the last slide and hide the Next button
+// Check if we are on the last slide and hide the Next button
 //   if (currentIndex === slides.length - 1) {
 //     nextButton.style.display = "none";
 //     prevButton.style.display = "none";
